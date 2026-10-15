@@ -1,0 +1,35 @@
+<!-- Abanoub Rezkalla -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abanoub Rezkalla - Tic-Tac-Toe - Problem 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-card">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">Two-player mode: both players use the mouse.</p>
+
+        <div class="player-legend">
+            <span><strong class="x-label">X</strong> Player 1</span>
+            <span><strong class="o-label">O</strong> Player 2</span>
+        </div>
+
+        <!-- JavaScript updates this message after each turn. -->
+        <div id="status" role="status" aria-live="polite">Player X Turn</div>
+
+        <!-- The game board and the X/O pieces are drawn using JavaScript. -->
+        <canvas id="gameCanvas" width="600" height="600"
+                aria-label="Tic-Tac-Toe board with nine squares">
+            Your browser does not support the HTML canvas element.
+        </canvas>
+
+        <button id="resetBtn" type="button">Reset Game</button>
+        <p class="hint">Click an empty square to make your move. Get three in a row to win!</p>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>

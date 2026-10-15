@@ -1,0 +1,140 @@
+/* Abanoub Rezkalla */
+
+/* Center the game on the page. */
+body {
+    margin: 0;
+    padding: 28px 14px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: #eaf2fb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #203550;
+    text-align: center;
+}
+
+.game-card {
+    box-sizing: border-box;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 28px 24px 26px;
+    border: 1px solid #d8e5f2;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 12px 35px rgba(28, 68, 111, 0.10);
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #487399;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    color: #183c60;
+    font-size: 38px;
+}
+
+.subtitle {
+    margin: 9px 0 19px;
+    color: #63768b;
+    font-size: 16px;
+}
+
+.player-legend {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 19px;
+    font-size: 15px;
+}
+
+.player-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.player-legend strong {
+    display: inline-grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border-radius: 8px;
+    font-size: 19px;
+}
+
+.x-label {
+    background: #e0ecff;
+    color: #2365cc;
+}
+
+.o-label {
+    background: #fff0e3;
+    color: #dd7733;
+}
+
+/* Display the current turn or the final result. */
+#status {
+    margin: 0 auto 17px;
+    padding: 12px;
+    max-width: 480px;
+    border-radius: 10px;
+    background: #eff5fc;
+    color: #183c60;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Canvas uses 600x600 drawing coordinates but scales on smaller screens. */
+#gameCanvas {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid #c8dcec;
+    border-radius: 12px;
+    background: #f7fbff;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+#resetBtn {
+    display: block;
+    margin: 21px auto 0;
+    padding: 12px 26px;
+    border: 0;
+    border-radius: 10px;
+    background: #2563bb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background: #174b98;
+}
+
+#resetBtn:focus-visible {
+    outline: 3px solid #f59b40;
+    outline-offset: 3px;
+}
+
+.hint {
+    margin: 18px 0 0;
+    color: #63768b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .game-card { padding: 24px 14px; }
+    h1 { font-size: 32px; }
+    .player-legend { gap: 14px; }
+    #status { font-size: 19px; }
+}
